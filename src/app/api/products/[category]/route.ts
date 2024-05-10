@@ -9,7 +9,7 @@ export async function GET(
   const category = params.category;
   try {
     const db = await pool.getConnection();
-    const query = `SELECT products.* FROM products JOIN categories ON products.category_id=categories.id WHERE categories.index = '${category}'`;
+    const query = `SELECT Products.* FROM Products JOIN Categories ON Products.category_id=Categories.id WHERE Categories.index = '${category}'`;
     const [rows] = await db.execute(query);
     db.release();
 
