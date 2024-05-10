@@ -7,27 +7,40 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+li {
+  white-space: nowrap;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  line-height: 1;
+}
+.swiper-wrapper {
+  align-items: end;
+}
+.swiper-slide {
+  opacity: 0 !important;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.swiper-slide-visible {
+  opacity: 1 !important;
+}
+@media (min-width: 960px) {
+  *::-webkit-scrollbar {
+    top: 10px;
+    height: 6px;
+    width: 2px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #c4c4c4;
+  }
+
+  *::-webkit-scrollbar-thumb:active {
+    background-color: black;
   }
 }

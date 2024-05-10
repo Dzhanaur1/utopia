@@ -8,10 +8,28 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      backgroundImage: {},
+      fontFamily: {
+        comfortaa: ["var(--font-comfortaa)"],
+        coiny: ["var(--font-coinyCirilic)"],
+      },
+      container: {
+        center: true,
+        padding: "15px",
+      },
+      screens: {
+        sm: "640px",
+
+        md: "768px",
+
+        lg: "1024px",
+
+        xl: "1200px",
+
+        "2xl": "1200px",
+      },
+      boxShadow: {
+        "3xl": "0px 0px 3px 1px rgba(0, 0, 0, 0.25)",
       },
     },
   },
