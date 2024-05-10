@@ -8,10 +8,10 @@ type ReqType = {
     email: string;
   };
 };
-export async function POST(req: ReqType) {
+export async function POST() {
   try {
     // Извлекаем данные из запроса
-   
+
     // Отправляем данные в CRM Битрикс24
     // const url =
     //   "https://b24-32j3sx.bitrix24.ru/rest/1/i2u320sj9j54eazq/crm.lead.add.json";

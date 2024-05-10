@@ -11,6 +11,7 @@ const initialState: CartSliceState = {
   price: 0,
   size: "",
   material: "",
+  count: 0,
 };
 const cartSlice = createSlice({
   name: "cart",
